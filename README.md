@@ -70,4 +70,4 @@ Feel free to submit issues or pull requests to improve this project. All contrib
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE) file for details.
