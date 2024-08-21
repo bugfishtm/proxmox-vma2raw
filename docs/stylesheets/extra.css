@@ -1,0 +1,52 @@
+/* Dark Mode - Slate Scheme with Deep Orange Primary */
+[data-md-color-scheme=slate][data-md-color-primary=deep-orange] {
+    --md-typeset-a-color: #ff5707; /* Link Color */
+}
+
+[data-md-color-primary=deep-orange] {
+    --md-primary-fg-color: hsla(var(--md-hue), 15%, 8%, 1); /* Primary Color */
+}
+
+[data-md-color-accent=deep-orange] {
+    --md-accent-fg-color: #FFFFFF; /* Accent Color */
+    --md-accent-fg-color--transparent: rgba(255, 152, 0, 0.5); /* Transparent Accent */
+}
+
+a {
+    color: var(--md-typeset-a-color);
+}
+
+a:hover {
+    color: #FFFFFF !important;
+}
+
+.md-nav__source a {
+	color: black;
+}
+.md-nav__source a:hover {
+	color: white;
+}
+
+.md-button {
+	background: #ff5707 !important;
+	border-radius: 5px !important;
+	border: none !important;
+	color: white !important;
+}
+.md-button:active {
+	background: #ff5707 !important;
+	border-radius: 5px !important;
+	border-color: #ff5707 !important;
+	border: none !important;
+}
+.md-button:focus {
+	background: #ff5707 !important;
+	border-radius: 5px !important;
+	border-color: #ff5707 !important;
+	border: none !important;
+}
+.md-button:hover {
+	background: #111317 !important;
+	border-color: #ff5707 !important;
+	border: none !important;
+}

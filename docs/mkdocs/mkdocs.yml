@@ -1,0 +1,51 @@
+site_name: Proxmox-VMA2RAW
+repo_url: https://github.com/bugfishtm/proxmox-vma2raw
+repo_name: bugfishtm/proxmox-vma2raw
+
+nav:
+  - Home: index.md
+  - Support: support.md
+  - License: license.md
+  - Impressum: https://bugfishtm.blogspot.com/2023/05/impressum.html
+  - Privacy: https://bugfishtm.blogspot.com/2023/05/privacy.html
+  - More by Bugfish: https://bugfishtm.github.io
+ 
+theme:
+  name: material
+  logo: ./logo.png
+  favicon: ./favicon.ico
+  primary: deep orange
+  language: 'en'
+  accent: deep orange
+  font: false
+  palette:
+    - scheme: slate
+      primary: deep orange
+      accent: deep orange
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+plugins:
+    - mkdocstrings
+    - search
+    - mkdocs-video
+    - meta-descriptions:
+       export_csv: false
+       quiet: false
+       enable_checks: false
+       min_length: 50
+       max_length: 160
+       trim: false
+    
+markdown_extensions:
+  - attr_list
+  
+use_directory_urls: false
+
+extra:
+  meta:
+    author: "Jan-Maurice Dahlmanns"

@@ -64,7 +64,3 @@ For a detailed walkthrough, check out the [YouTube video tutorial](https://www.y
 ## Contributing
 
 Feel free to submit issues or pull requests to improve this project. All contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
