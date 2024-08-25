@@ -6,13 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="This repository provides the necessary files and a ready-to-use Docker image to convert Proxmox VMA backup files to raw disk images. These raw images can then be accessed or mounted with Windows software.">
+  
       
       
-      
-      
-      
-        <link rel="next" href="support.html">
+        <link rel="next" href="download.html">
       
       
       <link rel="icon" href="favicon.ico">
@@ -20,7 +17,7 @@
     
     
       
-        <title>Home - Proxmox-VMA2RAW</title>
+        <title>Introduction - Proxmox-VMA2RAW</title>
       
     
     
@@ -30,7 +27,6 @@
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
-
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -42,7 +38,7 @@
 	{
 	  "@context": "http://schema.org",
 	  "@type": "TechArticle",
-	  "headline": "Home",
+	  "headline": "Introduction",
 	  "description": "Comprehensive documentation for a Docker image tool that converts Proxmox VMA backup files into raw disk images. Includes setup instructions, configuration details, and usage examples.",
 	  "articleSection": "Introduction",
 	  "datePublished": "2024-08-19",
@@ -69,10 +65,11 @@
 	<meta name='author' content='bugfish, ynvnzmlzaa@gmail.com'>
 	
 	
-	<meta property="og:title" content="Home - Proxmox-VMA2RAW"/>
+	<meta property="og:title" content="Introduction - Proxmox-VMA2RAW"/>
 	<meta name="description" content="Comprehensive documentation for a Docker image tool that converts Proxmox VMA backup files into raw disk images. Includes setup instructions, configuration details, and usage examples.">  
 	<meta name="og:description" content="Comprehensive documentation for a Docker image tool that converts Proxmox VMA backup files into raw disk images. Includes setup instructions, configuration details, and usage examples.">  
 	<meta property="og:image" content="./meta.png" />
+
     
     
       
@@ -92,7 +89,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -111,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#proxmox-vma2raw-docker-container" class="md-skip">
+        <a href="#proxmox-vma2raw" class="md-skip">
           Skip to content
         </a>
       
@@ -146,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Introduction
             
           </span>
         </div>
@@ -287,7 +293,7 @@
           
   
   <span class="md-ellipsis">
-    Home
+    Introduction
   </span>
   
 
@@ -298,7 +304,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Introduction
   </span>
   
 
@@ -401,6 +407,26 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="download.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -625,11 +651,9 @@
 
   
   
-<a class="md-button" rel="noopener" target="_blank" href="https://github.com/bugfishtm/proxmox-vma2raw">Github</a> 
- <a class="md-button" rel="noopener" target="_blank" href="https://github.com/bugfishtm/proxmox-vma2raw/archive/refs/heads/main.zip">Download</a><br /><br />   
 
 
-<div><h1 id="proxmox-vma2raw-docker-container">Proxmox-VMA2RAW Docker Container</h1>
+<div><h1 id="proxmox-vma2raw">Proxmox-VMA2RAW</h1>
 <p>This repository provides the necessary files and a ready-to-use Docker image to convert Proxmox VMA backup files to raw disk images. These raw images can then be accessed or mounted with Windows software.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
@@ -641,14 +665,14 @@
 <ol>
 <li>
 <p>Clone the repository:
-    <code>sh
-    git clone https://github.com/bugfishtm/proxmox-vma2raw.git
-    cd proxmox-vma2raw</code></p>
+    </p><div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/bugfishtm/proxmox-vma2raw.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>proxmox-vma2raw
+</span></code></pre></div>
 </li>
 <li>
 <p>Run the <code>create.bat</code> script to build and run the Docker container:
-    <code>sh
-    ./create.bat</code></p>
+    </p><div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>./create.bat
+</span></code></pre></div>
 </li>
 </ol>
 <h3 id="using-the-docker-container">Using the Docker Container</h3>
@@ -658,18 +682,18 @@
 </li>
 <li>
 <p>Access the interactive shell of the running Docker container in bash mode:
-    <code>sh
-    docker exec -it proxmox-vma2raw /bin/bash</code></p>
+    </p><div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>proxmox-vma2raw<span class="w"> </span>/bin/bash
+</span></code></pre></div>
 </li>
 <li>
 <p>Navigate to the <code>/opt/files</code> directory:
-    <code>sh
-    cd /opt/files</code></p>
+    </p><div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>/opt/files
+</span></code></pre></div>
 </li>
 <li>
 <p>Extract the <code>.vma</code> file to a raw disk image:
-    <code>sh
-    vma extract ./sourcefile.vma ./extractdir</code></p>
+    </p><div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>vma<span class="w"> </span>extract<span class="w"> </span>./sourcefile.vma<span class="w"> </span>./extractdir
+</span></code></pre></div>
 <ul>
 <li>Ensure <code>./extractdir</code> does not exist before running the command.</li>
 </ul>
@@ -747,7 +771,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
@@ -755,5 +779,7 @@
         <script src="javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

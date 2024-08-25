@@ -1,4 +1,4 @@
-# Proxmox-VMA2RAW Docker Container
+# Proxmox-VMA2RAW
 
 This repository provides the necessary files and a ready-to-use Docker image to convert Proxmox VMA backup files to raw disk images. These raw images can then be accessed or mounted with Windows software.
 
