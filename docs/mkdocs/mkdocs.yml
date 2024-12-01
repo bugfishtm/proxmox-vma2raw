@@ -1,6 +1,6 @@
 site_name: Proxmox-VMA2RAW
 repo_url: https://github.com/bugfishtm/proxmox-vma2raw
-repo_name: bugfishtm/proxmox-vma2raw
+repo_name: proxmox-vma2raw
 
 nav:
   - Introduction: index.md
@@ -22,7 +22,7 @@ theme:
   features:
     - content.code.copy
   palette:
-    - scheme: slate
+    - scheme: default
       primary: deep orange
       accent: deep orange
 
@@ -37,13 +37,6 @@ plugins:
     - search
     - mkdocs-video
     - glightbox
-    - meta-descriptions:
-       export_csv: false
-       quiet: false
-       enable_checks: false
-       min_length: 50
-       max_length: 160
-       trim: false
     
 markdown_extensions:
   - attr_list

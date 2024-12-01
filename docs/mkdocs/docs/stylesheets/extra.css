@@ -2,102 +2,21 @@
 [data-md-color-scheme=slate][data-md-color-primary=deep-orange] {
     --md-typeset-a-color: #ff5707; /* Link Color */
 }
-
 [data-md-color-primary=deep-orange] {
-    --md-primary-fg-color: hsla(var(--md-hue), 15%, 8%, 1); /* Primary Color */
-}
-
-[data-md-color-accent=deep-orange] {
-    --md-accent-fg-color: #FFFFFF; /* Accent Color */
-    --md-accent-fg-color--transparent: rgba(255, 152, 0, 0.5); /* Transparent Accent */
-}
-
-a {
-    color: var(--md-typeset-a-color);
-}
-
-.md-main {
-	background: #181818;
-}
-
-.md-search__inner, .md-search__form, .md-search__input {
-	background: #161616;
+    --md-primary-fg-color: #ff5707; /* Primary Color */
 }
 
 
-.md-search__output, .md-search__scrollwrap {
-	background: #242424;
+.md-button {
+	border-color: #ff5707 !important;
+	border-radius: 5px !important;
 }
 
-h1 {
-	color: #ff5707 !important;
+.md-button:hover {
+	background: #ff5707 !important;
 }
 
-h1, h2, h3, h4 {
-	color: #ff5707;
-	color: #FFFFFF;
-}
-
-a:hover {
-    color: #FFFFFF !important;
-}
-
-.md-nav__source a {
-	color: black;
-}
 .md-nav__source:hover {
 	background: #242424;
 	color: white !important;
-}
-
-.md-button {
-	background: #ff5707 !important;
-	border-radius: 5px !important;
-	border: none !important;
-	color: white !important;
-}
-.md-button:active {
-	background: #ff5707 !important;
-	border-radius: 5px !important;
-	border-color: #ff5707 !important;
-	border: none !important;
-}
-.md-button:focus {
-	background: #ff5707 !important;
-	border-radius: 5px !important;
-	border-color: #ff5707 !important;
-	border: none !important;
-}
-.md-button:hover {
-	background: #111317 !important;
-	border-color: #ff5707 !important;
-	border: none !important;
-}
-
-.md-nav__title {
-	background: none !important;
-	box-shadow: none !important;
-}
-
-code {
-	background: #161616 !important;
-	color: #FFFFFF !important;
-}
-
-.md-nav__link--passed {
-	color: #ff5707 !important;
-}
-.md-nav__link--active {
-	color: #FFFFFF !important;
-}
-
-.md-nav__title, .md-nav__title {
-	color: white !important;
-}
-.md-nav__title {
-	background: #181818 !important;
-}
-
-.md-nav__list, .md-nav--secondary {
-	background: #181818 !important;
 }
