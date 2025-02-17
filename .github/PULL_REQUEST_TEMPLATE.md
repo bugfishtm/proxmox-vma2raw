@@ -1,12 +1,22 @@
-Please provide information:
+## Description
+[Provide a brief description of the changes in this pull request]
 
-- Details: Provide details about your pull request and what it adds, fixes, or changes.
-- Issues fixed: Enter the issue numbers resolved by this pull request below, if any.
+## Related Issue
+[Reference any related issue(s) here using the syntax: Fixes #123 or Relates to #456]
 
-Please check your request:
+## Proposed Changes
+- [Change 1]
+- [Change 2]
+- [Change 3]
 
-1. This is not a duplicate of an existing pull request.
-2. No existing features have been broken without good reason.
-3. Your commit messages are detailed.
+## Additional Information
+[Any additional information or context that would be helpful for reviewers]
 
-Any questions should be directed to @bugfishtm.
+## Checklist
+- [ ] I have tested these changes locally
+- [ ] I have updated the documentation accordingly
+- [ ] My code follows the project's coding standards
+- [ ] I have added/updated tests for this change
+
+## Screenshots (if applicable)
+[Add screenshots here to demonstrate visual changes]
