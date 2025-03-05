@@ -1,0 +1,30 @@
+/* Color Scheme Changes */
+.md-button {
+	border-color: #ff5707 !important;
+	border-radius: 5px !important;
+}
+
+.md-button:hover {
+	background: #ff5707 !important;
+}
+
+.md-nav__source:hover {
+	background: #242424;
+	color: white !important;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #ff5707;        /* Deep Orange 500 */
+  --md-accent-fg-color: #ff5707;         /* Deep Orange 500 */
+  --md-default-bg-color: #121212;        /* Dark background */
+  --md-default-fg-color: #d5d7e2;        /* Light text color */
+  --md-typeset-a-color: #ff5707;	     /* Light A color */
+}
+
+.md-code__content, code {
+	background: #242424 !important;
+}
+
+.md-footer, .md-footer-meta {
+	background: #080808 !important;
+}
